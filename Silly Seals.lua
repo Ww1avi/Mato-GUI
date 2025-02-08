@@ -45,7 +45,7 @@ Tabs.Main:AddButton({
         Fluent:Notify({
         Title = "Anti Ban",
         Content = "Anti Ban Enabled",
-        SubContent = "SubContent", -- Optional
+        SubContent = "ExecutionContent", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
 })
 
