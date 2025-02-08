@@ -26,8 +26,7 @@ Fluent:Notify({
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "House" }),
-
-	local Section = Tab:AddSection("Main")
+	
 
 	Tab:AddButton({
     Title = "Anti Ban",
