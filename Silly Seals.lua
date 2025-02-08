@@ -25,17 +25,8 @@ Fluent:Notify({
 
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    MainTab = Window:AddTab({ Title = "Main", Icon = "House" }),
-
-	MainTab:AddButton({
-    Title = "Anti Ban",
-    Description = "Protects you from Bans",
-    Callback = function()
-        print("Hello, world!")
-    end
-})
-
-Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
