@@ -42,7 +42,21 @@ Tabs.Main:AddButton({
     Title = "Anti Ban",
     Description = "Protects you from Bans",
     Callback = function()
-        print("Hello, world!")
+        local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local function sendLocalChatMessage(message)
+    local chatService = game:GetService("StarterGui")
+    chatService:SetCore("ChatMakeSystemMessage", {
+        Text = message;
+        Color = Color3.fromRGB(0, 255, 0); -- Green color
+        Font = Enum.Font.SourceSansBold;
+        TextSize = 18;
+    })
+end
+
+-- Example: Call this function when a button is clicked
+sendLocalChatMessage("Anti Ban enabled")
     end
 })
 
