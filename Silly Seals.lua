@@ -29,3 +29,16 @@ local Tabs = {
 
     local Section = Tab:AddSection("🔁Auto Functions")
 
+    local Toggle = Tab:AddToggle("MyToggle", 
+{
+    Title = "Auto Fish", 
+    Description = "Starts Auto Fish",
+    Default = false
+    Callback = function(state)
+	if state then
+	    game:GetService("ReplicatedStorage").Scripts.Fishing.Events.DeployBob:FireServer(workspace.FishingSpots.FishingSpot,CFrame.new(205.743484, 132.25, 269.160004, 1, 0, 0, 0, -4.37113883e-08, -1, 0, 1, -4.37113883e-08))
+	else
+	    print("Toggle Off")
+        end
+    end 
+})
