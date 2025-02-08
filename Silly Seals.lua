@@ -37,3 +37,12 @@ InterfaceManager:SetLibrary(Fluent)
 
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
+
+Tabs.Main:AddButton({
+    Title = "Anti Ban",
+    Description = "Protects you from Bans",
+    Callback = function()
+        print("Hello, world!")
+    end
+})
+
