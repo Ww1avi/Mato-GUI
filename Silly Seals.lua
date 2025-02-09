@@ -92,3 +92,35 @@ while true do
 end
     end
 })
+
+Tabs.Main:AddButton({
+    Title = "Respawn Seal",
+    Description = "It Respawns your Seal",
+    Callback = function()
+        -- Auto Teleport Script for Roblox
+-- Script created by Ww1avi
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+-- Target position to teleport to
+local targetPosition = Vector3.new(298.62, 145.23, 302.24)
+
+-- Function to teleport the character to the given position
+local function teleportToPosition(position)
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(position)
+    end
+end
+
+-- Teleport the character to the target position
+teleportToPosition(targetPosition)
+
+-- Update the character reference if the character respawns
+LocalPlayer.CharacterAdded:Connect(function(newCharacter)
+    character = newCharacter
+    teleportToPosition(targetPosition)
+end)
+    end
+})
