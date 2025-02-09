@@ -124,9 +124,3 @@ LocalPlayer.CharacterAdded:Connect(function(newCharacter)
 end)
     end
 })
-
--- Fluent provides Lucide Icons, they are optional
-local Tabs = {
-    Second = Window:AddTab({ Title = "Teleport", Icon = "" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
-}
