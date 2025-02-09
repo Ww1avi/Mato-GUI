@@ -127,5 +127,6 @@ end)
 
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "" }),
-
+    Second = Window:AddTab({ Title = "Teleport", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
