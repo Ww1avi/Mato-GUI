@@ -124,17 +124,3 @@ LocalPlayer.CharacterAdded:Connect(function(newCharacter)
 end)
     end
 })
-
-Tabs.Main:AddButton({
-    Title = "Auto Sell",
-    Description = "Starts Auto Sell",
-    Callback = function()
-    Fluent:Notify({
-        Title = "Auto Sell",
-        Content = "Auto Sell Started",
-        SubContent = "Mato GUI", -- Optional
-        Duration = 8 -- Set to nil to make the notification not disappear
-})
-    
-    end
-})
